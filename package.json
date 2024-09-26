@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start:consent": "node app.js",
-    "start:consentless": "node consentLessApp.js",
-    "start:pkce": "node pkceApp.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:consent": "node src/consent.js",
+    "start:consentless": "node src/consent-less.js",
+    "start:pkce": "node src/pkce.js",
+    "run:create-users": "node src/scripts/users-script.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.7",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "express-session": "^1.18.0",
